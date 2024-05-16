@@ -1,0 +1,166 @@
+body {
+    font-family: sans-serif;
+}
+
+.card-details {
+    display: flex;
+
+    padding: 24px;
+    align-items: center;
+
+    border-radius: 10px;
+    margin: 50px;
+    width: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.error p {
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 20px;
+    color: red;
+}
+
+.loading {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.details {
+    margin-left: 30px;
+}
+
+.card-section {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    text-decoration: none;
+    color: black;
+    transition: 1s all;
+    border-radius: 5px;
+    background: rgb(207, 206, 206);
+    padding: 8px 25px;
+}
+
+.button:hover {
+    color: white;
+    background: black;
+    transform: scale(1.05);
+}
+
+section.search-section {
+    text-align: center;
+    margin: 60px 0px;
+}
+
+.form-input {
+    border-radius: 8px;
+    border: 1px solid rgb(219, 219, 219);
+    padding: 5px 30px;
+
+}
+
+.movie-info img {
+    width: 100%;
+    max-width: 200px;
+    height: 260px;
+    border-radius: 10px;
+    transition: 1s all;
+}
+
+.movie-info h4 {
+    transition: 1s all;
+}
+
+.card-title {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 10px;
+    padding: 20px 10px;
+    width: 100%;
+
+}
+
+.responsive {
+    text-align: center;
+}
+
+.card-title:hover img {
+    transform: scale(1.05);
+
+}
+
+.card-title:hover h4 {
+    color: black;
+    transform: scaleX(1.05);
+}
+
+.card-title:hover {
+    background: rgb(168, 168, 168);
+}
+
+.details-image img {
+    border-radius: 10px;
+}
+
+@media (max-width:1024px) {
+    .movie-info h4 {
+        font-size: 18px;
+    }
+
+    .card-details {
+        width: 70%;
+    }
+}
+
+@media (max-width:768px) {
+    .card-details {
+        width: 80%;
+    }
+}
+
+@media (max-width:425px) {
+    .responsive {
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .card-title {
+        width: 60%;
+    }
+
+    .details-image img {
+        border-radius: 10px;
+        width: 100%;
+        max-width: 250px;
+        margin: 20px 0px;
+    }
+
+    .card-details {
+        width: 82%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .details {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width:375px) {
+    .card-title {
+        width: 80%;
+    }
+
+    .details {
+        margin-left: 0px;
+    }
+}
